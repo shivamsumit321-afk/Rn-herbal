@@ -1,0 +1,1368 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>RN Herbal – Stone Crash & Stone-Go | Natural Kidney & Gallbladder Stone Relief</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --green-dark: #1a5c2a;
+    --green-mid: #2d8a42;
+    --green-light: #4caf50;
+    --gold: #c8a84b;
+    --gold-light: #f0d080;
+    --orange: #e05c20;
+    --cream: #faf7f0;
+    --text-dark: #1a1a1a;
+    --text-mid: #3a3a3a;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    font-family: 'Source Sans 3', sans-serif;
+    background: var(--cream);
+    color: var(--text-dark);
+    overflow-x: hidden;
+  }
+
+  /* ── HEADER ── */
+  header {
+    background: var(--green-dark);
+    padding: 12px 24px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 2px 12px rgba(0,0,0,.3);
+  }
+  .logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  .logo-leaf {
+    font-size: 28px;
+  }
+  .logo-text {
+    font-family: 'Playfair Display', serif;
+    color: #fff;
+    font-size: 22px;
+    line-height: 1;
+  }
+  .logo-text span { color: var(--gold-light); }
+  .header-cta {
+    background: var(--gold);
+    color: #fff;
+    border: none;
+    padding: 10px 22px;
+    border-radius: 30px;
+    font-weight: 700;
+    font-size: 14px;
+    cursor: pointer;
+    letter-spacing: .5px;
+    transition: background .2s;
+    text-decoration: none;
+  }
+  .header-cta:hover { background: var(--orange); }
+
+  /* ── HERO ── */
+  .hero {
+    background: linear-gradient(135deg, #0d3b1c 0%, #1a5c2a 50%, #2d6e3a 100%);
+    padding: 60px 24px 50px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+  }
+  .hero::before {
+    content: '';
+    position: absolute;
+    top: -60px; right: -60px;
+    width: 300px; height: 300px;
+    background: radial-gradient(circle, rgba(200,168,75,.18) 0%, transparent 70%);
+    border-radius: 50%;
+  }
+  .hero::after {
+    content: '';
+    position: absolute;
+    bottom: -40px; left: -40px;
+    width: 200px; height: 200px;
+    background: radial-gradient(circle, rgba(76,175,80,.15) 0%, transparent 70%);
+    border-radius: 50%;
+  }
+  .hero-badge {
+    display: inline-block;
+    background: rgba(200,168,75,.25);
+    border: 1px solid var(--gold);
+    color: var(--gold-light);
+    padding: 6px 18px;
+    border-radius: 20px;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    animation: fadeDown .6s ease both;
+  }
+  .hero h1 {
+    font-family: 'Playfair Display', serif;
+    color: #fff;
+    font-size: clamp(28px, 6vw, 52px);
+    line-height: 1.2;
+    margin-bottom: 16px;
+    animation: fadeDown .7s .1s ease both;
+  }
+  .hero h1 em { color: var(--gold-light); font-style: normal; }
+  .hero-sub {
+    color: rgba(255,255,255,.82);
+    font-size: 17px;
+    max-width: 560px;
+    margin: 0 auto 36px;
+    line-height: 1.6;
+    animation: fadeDown .8s .2s ease both;
+  }
+  .hero-stats {
+    display: flex;
+    justify-content: center;
+    gap: 32px;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+    animation: fadeDown .9s .3s ease both;
+  }
+  .stat {
+    text-align: center;
+  }
+  .stat-num {
+    font-family: 'Playfair Display', serif;
+    font-size: 32px;
+    color: var(--gold-light);
+    font-weight: 900;
+  }
+  .stat-label {
+    font-size: 12px;
+    color: rgba(255,255,255,.7);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+  .hero-products {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    gap: 30px;
+    flex-wrap: wrap;
+    margin-bottom: 36px;
+    animation: fadeUp .9s .4s ease both;
+  }
+  .hero-product-card {
+    background: rgba(255,255,255,.08);
+    border: 1px solid rgba(255,255,255,.15);
+    border-radius: 20px;
+    padding: 24px 20px 20px;
+    width: 220px;
+    backdrop-filter: blur(6px);
+    transition: transform .3s;
+  }
+  .hero-product-card:hover { transform: translateY(-8px); }
+  .hero-product-card img {
+    width: 140px;
+    height: 180px;
+    object-fit: contain;
+    display: block;
+    margin: 0 auto 14px;
+    filter: drop-shadow(0 8px 20px rgba(0,0,0,.4));
+  }
+  .hero-product-name {
+    font-family: 'Playfair Display', serif;
+    color: #fff;
+    font-size: 17px;
+    margin-bottom: 4px;
+  }
+  .hero-product-type {
+    color: var(--gold-light);
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 12px;
+  }
+  .hero-product-price {
+    font-size: 22px;
+    font-weight: 700;
+    color: #fff;
+  }
+  .hero-product-price span {
+    font-size: 13px;
+    text-decoration: line-through;
+    color: rgba(255,255,255,.5);
+    margin-left: 6px;
+  }
+  .btn-primary {
+    display: inline-block;
+    background: linear-gradient(135deg, var(--gold), #e8c050);
+    color: var(--green-dark);
+    padding: 16px 42px;
+    border-radius: 50px;
+    font-weight: 700;
+    font-size: 17px;
+    text-decoration: none;
+    letter-spacing: .5px;
+    box-shadow: 0 6px 24px rgba(200,168,75,.4);
+    transition: transform .2s, box-shadow .2s;
+    animation: fadeUp 1s .5s ease both;
+  }
+  .btn-primary:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 30px rgba(200,168,75,.55);
+  }
+
+  /* ── TRUST BAR ── */
+  .trust-bar {
+    background: #fff;
+    border-bottom: 2px solid #e8e0d0;
+    padding: 18px 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 36px;
+    flex-wrap: wrap;
+  }
+  .trust-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--green-dark);
+  }
+  .trust-icon { font-size: 20px; }
+
+  /* ── SECTION ── */
+  section { padding: 64px 24px; }
+  .section-label {
+    text-align: center;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: var(--green-mid);
+    margin-bottom: 10px;
+  }
+  .section-title {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(24px, 4vw, 38px);
+    text-align: center;
+    color: var(--green-dark);
+    line-height: 1.25;
+    margin-bottom: 14px;
+  }
+  .section-desc {
+    text-align: center;
+    color: #555;
+    font-size: 16px;
+    max-width: 620px;
+    margin: 0 auto 48px;
+    line-height: 1.7;
+  }
+
+  /* ── PROBLEM ── */
+  .problem-section {
+    background: #fff;
+  }
+  .problem-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 20px;
+    max-width: 900px;
+    margin: 0 auto;
+  }
+  .problem-card {
+    background: #fef9f0;
+    border-left: 4px solid var(--orange);
+    border-radius: 12px;
+    padding: 22px 20px;
+    display: flex;
+    gap: 14px;
+    align-items: flex-start;
+  }
+  .problem-icon { font-size: 28px; flex-shrink: 0; }
+  .problem-text strong {
+    display: block;
+    font-size: 15px;
+    color: var(--text-dark);
+    margin-bottom: 4px;
+  }
+  .problem-text p {
+    font-size: 13px;
+    color: #666;
+    line-height: 1.5;
+  }
+  .problem-bottom {
+    text-align: center;
+    margin-top: 40px;
+    padding: 24px;
+    background: var(--green-dark);
+    border-radius: 16px;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .problem-bottom p {
+    color: #fff;
+    font-size: 18px;
+    font-weight: 600;
+  }
+  .problem-bottom em { color: var(--gold-light); font-style: normal; }
+
+  /* ── PRODUCTS ── */
+  .products-section { background: var(--cream); }
+  .products-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 32px;
+    max-width: 820px;
+    margin: 0 auto;
+  }
+  .product-card {
+    background: #fff;
+    border-radius: 24px;
+    overflow: hidden;
+    box-shadow: 0 4px 30px rgba(0,0,0,.08);
+    transition: transform .3s, box-shadow .3s;
+    position: relative;
+  }
+  .product-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 50px rgba(0,0,0,.14);
+  }
+  .product-badge-top {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    background: var(--orange);
+    color: #fff;
+    font-size: 11px;
+    font-weight: 700;
+    padding: 4px 12px;
+    border-radius: 20px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+  .product-img-wrap {
+    background: linear-gradient(160deg, #e8f5ea 0%, #c8e6c9 100%);
+    padding: 40px 30px 30px;
+    text-align: center;
+  }
+  .product-img-wrap img {
+    width: 180px;
+    height: 220px;
+    object-fit: contain;
+    filter: drop-shadow(0 10px 24px rgba(0,0,0,.2));
+  }
+  .product-body { padding: 24px 24px 28px; }
+  .product-brand {
+    font-size: 11px;
+    font-weight: 700;
+    color: var(--green-mid);
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    margin-bottom: 6px;
+  }
+  .product-name {
+    font-family: 'Playfair Display', serif;
+    font-size: 26px;
+    color: var(--green-dark);
+    margin-bottom: 6px;
+  }
+  .product-tagline {
+    font-size: 13px;
+    color: #777;
+    margin-bottom: 18px;
+    line-height: 1.5;
+  }
+  .product-benefits {
+    list-style: none;
+    margin-bottom: 22px;
+  }
+  .product-benefits li {
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
+    font-size: 14px;
+    color: var(--text-mid);
+    padding: 5px 0;
+    border-bottom: 1px solid #f0ede6;
+  }
+  .product-benefits li:last-child { border-bottom: none; }
+  .check { color: var(--green-mid); font-weight: 700; font-size: 16px; }
+  .product-price-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 16px;
+  }
+  .product-price {
+    font-family: 'Playfair Display', serif;
+    font-size: 28px;
+    color: var(--green-dark);
+    font-weight: 700;
+  }
+  .product-price-old {
+    font-size: 15px;
+    text-decoration: line-through;
+    color: #aaa;
+    margin-left: 6px;
+  }
+  .product-savings {
+    background: #e8f5ea;
+    color: var(--green-dark);
+    font-size: 12px;
+    font-weight: 700;
+    padding: 4px 10px;
+    border-radius: 12px;
+  }
+  .btn-buy {
+    display: block;
+    width: 100%;
+    background: linear-gradient(135deg, var(--green-dark), var(--green-mid));
+    color: #fff;
+    border: none;
+    padding: 15px;
+    border-radius: 14px;
+    font-size: 16px;
+    font-weight: 700;
+    cursor: pointer;
+    letter-spacing: .5px;
+    transition: opacity .2s, transform .2s;
+    text-align: center;
+    text-decoration: none;
+  }
+  .btn-buy:hover { opacity: .88; transform: scale(1.02); }
+  .btn-buy-outline {
+    display: block;
+    width: 100%;
+    background: transparent;
+    color: var(--green-dark);
+    border: 2px solid var(--green-dark);
+    padding: 13px;
+    border-radius: 14px;
+    font-size: 15px;
+    font-weight: 700;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background .2s, color .2s;
+    text-align: center;
+    text-decoration: none;
+  }
+  .btn-buy-outline:hover { background: var(--green-dark); color: #fff; }
+
+  /* ── HOW IT WORKS ── */
+  .how-section { background: #fff; }
+  .steps-row {
+    display: flex;
+    justify-content: center;
+    gap: 0;
+    max-width: 860px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+  }
+  .step {
+    flex: 1;
+    min-width: 200px;
+    text-align: center;
+    padding: 28px 20px;
+    position: relative;
+  }
+  .step:not(:last-child)::after {
+    content: '→';
+    position: absolute;
+    right: -10px;
+    top: 42px;
+    font-size: 24px;
+    color: var(--green-light);
+  }
+  .step-num {
+    width: 56px;
+    height: 56px;
+    background: linear-gradient(135deg, var(--green-dark), var(--green-mid));
+    color: #fff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Playfair Display', serif;
+    font-size: 22px;
+    font-weight: 900;
+    margin: 0 auto 16px;
+    box-shadow: 0 4px 14px rgba(45,138,66,.35);
+  }
+  .step-icon { font-size: 28px; margin-bottom: 8px; }
+  .step h4 {
+    font-family: 'Playfair Display', serif;
+    font-size: 16px;
+    color: var(--green-dark);
+    margin-bottom: 8px;
+  }
+  .step p { font-size: 13px; color: #666; line-height: 1.5; }
+
+  /* ── BENEFITS STRIP ── */
+  .benefits-section {
+    background: linear-gradient(135deg, var(--green-dark) 0%, #1e6b30 100%);
+    padding: 64px 24px;
+  }
+  .benefits-section .section-title { color: #fff; }
+  .benefits-section .section-label { color: var(--gold-light); }
+  .benefits-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 24px;
+    max-width: 900px;
+    margin: 0 auto;
+  }
+  .benefit-card {
+    background: rgba(255,255,255,.1);
+    border: 1px solid rgba(255,255,255,.15);
+    border-radius: 18px;
+    padding: 28px 22px;
+    text-align: center;
+    transition: background .3s;
+  }
+  .benefit-card:hover { background: rgba(255,255,255,.18); }
+  .benefit-icon { font-size: 36px; margin-bottom: 12px; }
+  .benefit-card h4 {
+    font-family: 'Playfair Display', serif;
+    font-size: 17px;
+    color: var(--gold-light);
+    margin-bottom: 8px;
+  }
+  .benefit-card p { font-size: 13px; color: rgba(255,255,255,.78); line-height: 1.6; }
+
+  /* ── TESTIMONIALS ── */
+  .testimonials-section { background: var(--cream); }
+  .reviews-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 24px;
+    max-width: 960px;
+    margin: 0 auto;
+  }
+  .review-card {
+    background: #fff;
+    border-radius: 18px;
+    padding: 26px 24px;
+    box-shadow: 0 2px 20px rgba(0,0,0,.06);
+    position: relative;
+  }
+  .review-card::before {
+    content: '"';
+    position: absolute;
+    top: 12px;
+    left: 20px;
+    font-size: 60px;
+    color: var(--green-light);
+    opacity: .15;
+    font-family: 'Playfair Display', serif;
+    line-height: 1;
+  }
+  .review-stars { color: #f5a623; font-size: 16px; margin-bottom: 10px; }
+  .review-text {
+    font-size: 14px;
+    line-height: 1.7;
+    color: var(--text-mid);
+    margin-bottom: 18px;
+    font-style: italic;
+  }
+  .review-author {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+  .review-avatar {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, var(--green-mid), var(--green-light));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-weight: 700;
+    font-size: 17px;
+    flex-shrink: 0;
+  }
+  .review-name { font-weight: 700; font-size: 14px; color: var(--green-dark); }
+  .review-meta { font-size: 12px; color: #999; }
+  .review-product-tag {
+    display: inline-block;
+    background: #e8f5ea;
+    color: var(--green-dark);
+    font-size: 11px;
+    font-weight: 600;
+    padding: 3px 10px;
+    border-radius: 12px;
+    margin-bottom: 12px;
+  }
+
+  /* ── INGREDIENTS ── */
+  .ingredients-section { background: #fff; }
+  .ingredients-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 20px;
+    max-width: 880px;
+    margin: 0 auto;
+  }
+  .ingredient-card {
+    text-align: center;
+    padding: 24px 16px;
+    background: #f5fbf5;
+    border-radius: 16px;
+    border: 1px solid #d4edda;
+    transition: transform .2s;
+  }
+  .ingredient-card:hover { transform: translateY(-4px); }
+  .ingredient-icon { font-size: 36px; margin-bottom: 10px; }
+  .ingredient-name {
+    font-weight: 700;
+    font-size: 14px;
+    color: var(--green-dark);
+    margin-bottom: 4px;
+  }
+  .ingredient-hindi {
+    font-size: 12px;
+    color: #888;
+    margin-bottom: 8px;
+  }
+  .ingredient-benefit {
+    font-size: 12px;
+    color: #555;
+    line-height: 1.4;
+  }
+
+  /* ── FAQ ── */
+  .faq-section { background: var(--cream); }
+  .faq-list { max-width: 720px; margin: 0 auto; }
+  .faq-item {
+    background: #fff;
+    border-radius: 14px;
+    margin-bottom: 14px;
+    overflow: hidden;
+    box-shadow: 0 2px 10px rgba(0,0,0,.05);
+  }
+  .faq-q {
+    padding: 20px 22px;
+    font-weight: 700;
+    font-size: 15px;
+    color: var(--green-dark);
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 12px;
+    user-select: none;
+  }
+  .faq-q::after { content: '+'; font-size: 22px; color: var(--green-mid); flex-shrink: 0; }
+  .faq-item.open .faq-q::after { content: '−'; }
+  .faq-a {
+    display: none;
+    padding: 0 22px 20px;
+    font-size: 14px;
+    color: #555;
+    line-height: 1.7;
+  }
+  .faq-item.open .faq-a { display: block; }
+
+  /* ── CTA BOTTOM ── */
+  .cta-section {
+    background: linear-gradient(135deg, #0a2e12 0%, var(--green-dark) 60%, #1e6b30 100%);
+    padding: 72px 24px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+  }
+  .cta-section::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.03'%3E%3Ccircle cx='30' cy='30' r='4'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+  }
+  .cta-section h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(26px, 5vw, 44px);
+    color: #fff;
+    margin-bottom: 16px;
+    position: relative;
+  }
+  .cta-section h2 em { color: var(--gold-light); font-style: normal; }
+  .cta-section p {
+    color: rgba(255,255,255,.82);
+    font-size: 17px;
+    max-width: 520px;
+    margin: 0 auto 36px;
+    line-height: 1.6;
+    position: relative;
+  }
+  .cta-btns {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    flex-wrap: wrap;
+    position: relative;
+  }
+  .btn-cta-gold {
+    background: linear-gradient(135deg, var(--gold), #e8c050);
+    color: var(--green-dark);
+    padding: 16px 40px;
+    border-radius: 50px;
+    font-size: 17px;
+    font-weight: 700;
+    text-decoration: none;
+    box-shadow: 0 6px 24px rgba(200,168,75,.45);
+    transition: transform .2s;
+    display: inline-block;
+  }
+  .btn-cta-gold:hover { transform: translateY(-3px); }
+  .btn-cta-white {
+    background: rgba(255,255,255,.12);
+    border: 2px solid rgba(255,255,255,.5);
+    color: #fff;
+    padding: 14px 36px;
+    border-radius: 50px;
+    font-size: 16px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: background .2s;
+    display: inline-block;
+  }
+  .btn-cta-white:hover { background: rgba(255,255,255,.22); }
+
+  /* ── GUARANTEE ── */
+  .guarantee-bar {
+    background: #fff;
+    border-top: 3px solid var(--gold);
+    padding: 32px 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    text-align: center;
+  }
+  .guarantee-icon { font-size: 44px; }
+  .guarantee-text h4 {
+    font-family: 'Playfair Display', serif;
+    font-size: 20px;
+    color: var(--green-dark);
+    margin-bottom: 4px;
+  }
+  .guarantee-text p { font-size: 14px; color: #666; max-width: 380px; line-height: 1.5; }
+
+  /* ── FOOTER ── */
+  footer {
+    background: #0d1f0f;
+    color: rgba(255,255,255,.6);
+    padding: 40px 24px 24px;
+    text-align: center;
+  }
+  .footer-logo {
+    font-family: 'Playfair Display', serif;
+    font-size: 24px;
+    color: var(--gold-light);
+    margin-bottom: 12px;
+  }
+  .footer-tagline {
+    font-size: 13px;
+    margin-bottom: 20px;
+  }
+  .footer-links {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+  }
+  .footer-links a {
+    color: rgba(255,255,255,.55);
+    text-decoration: none;
+    font-size: 13px;
+    transition: color .2s;
+  }
+  .footer-links a:hover { color: var(--gold-light); }
+  .footer-disclaimer {
+    font-size: 11px;
+    color: rgba(255,255,255,.3);
+    max-width: 680px;
+    margin: 0 auto 16px;
+    line-height: 1.6;
+  }
+  .footer-copy {
+    font-size: 12px;
+    color: rgba(255,255,255,.35);
+    border-top: 1px solid rgba(255,255,255,.1);
+    padding-top: 16px;
+    margin-top: 16px;
+  }
+
+  /* ── FLOATING WHATSAPP ── */
+  .whatsapp-btn {
+    position: fixed;
+    bottom: 24px;
+    right: 24px;
+    background: #25d366;
+    color: #fff;
+    width: 58px;
+    height: 58px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 28px;
+    box-shadow: 0 4px 20px rgba(37,211,102,.5);
+    text-decoration: none;
+    z-index: 200;
+    transition: transform .2s;
+    animation: pulse 2s infinite;
+  }
+  .whatsapp-btn:hover { transform: scale(1.1); }
+
+  /* ── ANIMATIONS ── */
+  @keyframes fadeDown {
+    from { opacity: 0; transform: translateY(-20px); }
+    to   { opacity: 1; transform: translateY(0); }
+  }
+  @keyframes fadeUp {
+    from { opacity: 0; transform: translateY(20px); }
+    to   { opacity: 1; transform: translateY(0); }
+  }
+  @keyframes pulse {
+    0%, 100% { box-shadow: 0 4px 20px rgba(37,211,102,.5); }
+    50%       { box-shadow: 0 4px 30px rgba(37,211,102,.8); }
+  }
+
+  /* ── RESPONSIVE ── */
+  @media (max-width: 600px) {
+    .step:not(:last-child)::after { display: none; }
+    .hero-stats { gap: 20px; }
+    .steps-row { flex-direction: column; align-items: center; }
+  }
+</style>
+</head>
+<body>
+
+<!-- HEADER -->
+<header>
+  <div class="logo">
+    <span class="logo-leaf">🌿</span>
+    <div class="logo-text">RN <span>Herbal</span></div>
+  </div>
+  <a href="#products" class="header-cta">Order Now</a>
+</header>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-badge">🏆 Trusted Ayurvedic Formula · Est. 2010</div>
+  <h1>Say Goodbye to Kidney<br>& Gallbladder <em>Stones</em></h1>
+  <p class="hero-sub">No surgery. No side effects. Ancient Ayurvedic herbs working where modern medicine falls short — dissolving stones naturally from within.</p>
+
+  <div class="hero-stats">
+    <div class="stat">
+      <div class="stat-num">55,000+</div>
+      <div class="stat-label">Patients Healed</div>
+    </div>
+    <div class="stat">
+      <div class="stat-num">7–15</div>
+      <div class="stat-label">Days to Relief</div>
+    </div>
+    <div class="stat">
+      <div class="stat-num">100%</div>
+      <div class="stat-label">Ayurvedic</div>
+    </div>
+    <div class="stat">
+      <div class="stat-num">0</div>
+      <div class="stat-label">Side Effects</div>
+    </div>
+  </div>
+
+  <div class="hero-products">
+    <div class="hero-product-card">
+      <img src="/mnt/user-data/uploads/1000034133.png" alt="Stone Crash Powder">
+      <div class="hero-product-name">Stone Crash</div>
+      <div class="hero-product-type">Herbal Powder · 100g</div>
+      <div class="hero-product-price">₹899 <span>₹1,299</span></div>
+    </div>
+    <div class="hero-product-card">
+      <img src="/mnt/user-data/uploads/1000034127.png" alt="Stone-Go Capsules">
+      <div class="hero-product-name">Stone-Go</div>
+      <div class="hero-product-type">Capsules · 60 caps</div>
+      <div class="hero-product-price">₹999 <span>₹1,499</span></div>
+    </div>
+  </div>
+
+  <a href="#products" class="btn-primary">🛒 Shop Now — Free Delivery</a>
+</section>
+
+<!-- TRUST BAR -->
+<div class="trust-bar">
+  <div class="trust-item"><span class="trust-icon">🌿</span> 100% Ayurvedic</div>
+  <div class="trust-item"><span class="trust-icon">🚚</span> Free Delivery</div>
+  <div class="trust-item"><span class="trust-icon">🔬</span> GMP & WHO Certified</div>
+  <div class="trust-item"><span class="trust-icon">🛡️</span> 30-Day Money Back</div>
+  <div class="trust-item"><span class="trust-icon">⭐</span> 4.8 / 5 Rating</div>
+</div>
+
+<!-- PROBLEM SECTION -->
+<section class="problem-section">
+  <div class="section-label">Are You Suffering?</div>
+  <h2 class="section-title">Living with Stone Pain<br>Ruins Every Day</h2>
+  <p class="section-desc">After 35, the body's natural mineral balance shifts. Kidney and gallbladder stones become increasingly common — and increasingly painful. Do any of these sound familiar?</p>
+
+  <div class="problem-grid">
+    <div class="problem-card">
+      <div class="problem-icon">😣</div>
+      <div class="problem-text">
+        <strong>Severe Back & Side Pain</strong>
+        <p>Sharp, wave-like pain radiating from your back to your groin — sometimes unbearable.</p>
+      </div>
+    </div>
+    <div class="problem-card">
+      <div class="problem-icon">🌡️</div>
+      <div class="problem-text">
+        <strong>Fever & Burning Urination</strong>
+        <p>Urinary tract infections caused by stones blocking normal urine flow.</p>
+      </div>
+    </div>
+    <div class="problem-card">
+      <div class="problem-icon">🤢</div>
+      <div class="problem-text">
+        <strong>Nausea & Bloating After Meals</strong>
+        <p>Gallbladder stones causing discomfort, indigestion and heaviness after eating.</p>
+      </div>
+    </div>
+    <div class="problem-card">
+      <div class="problem-icon">😴</div>
+      <div class="problem-text">
+        <strong>Sleepless Nights</strong>
+        <p>Stone pain doesn't rest — neither can you. Fatigue compounds every day.</p>
+      </div>
+    </div>
+    <div class="problem-card">
+      <div class="problem-icon">🏥</div>
+      <div class="problem-text">
+        <strong>Doctors Recommending Surgery</strong>
+        <p>Expensive, painful operations with long recovery times — is there another way?</p>
+      </div>
+    </div>
+    <div class="problem-card">
+      <div class="problem-icon">💊</div>
+      <div class="problem-text">
+        <strong>Medicines That Don't Work</strong>
+        <p>Only masking the pain without treating the root cause — stones keep growing.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="problem-bottom">
+    <p>You don't have to choose surgery. <em>RN Herbal has a natural answer</em> — backed by Ayurveda for thousands of years.</p>
+  </div>
+</section>
+
+<!-- PRODUCTS -->
+<section class="products-section" id="products">
+  <div class="section-label">Our Products</div>
+  <h2 class="section-title">Choose Your Natural Solution</h2>
+  <p class="section-desc">Two powerful Ayurvedic formulas — each designed to dissolve and flush stones safely, without surgery or side effects.</p>
+
+  <div class="products-grid">
+
+    <!-- Product 1: Stone Crash -->
+    <div class="product-card">
+      <div class="product-badge-top">BESTSELLER</div>
+      <div class="product-img-wrap">
+        <img src="/mnt/user-data/uploads/1000034133.png" alt="RN Herbal Stone Crash Powder">
+      </div>
+      <div class="product-body">
+        <div class="product-brand">RN Herbal</div>
+        <div class="product-name">Stone Crash Powder</div>
+        <div class="product-tagline">Ayurvedic herbal powder for kidney & gallbladder stones · 100 GM</div>
+        <ul class="product-benefits">
+          <li><span class="check">✓</span> Dissolves kidney stones up to 40mm</li>
+          <li><span class="check">✓</span> Treats Urinary Tract Infections naturally</li>
+          <li><span class="check">✓</span> Protects kidney function long-term</li>
+          <li><span class="check">✓</span> Flushes stones through urine painlessly</li>
+          <li><span class="check">✓</span> Easy-to-take powder — mix with warm water</li>
+        </ul>
+        <div class="product-price-row">
+          <div>
+            <span class="product-price">₹899</span>
+            <span class="product-price-old">₹1,299</span>
+          </div>
+          <span class="product-savings">Save 31%</span>
+        </div>
+        <a href="https://wa.me/919999999999?text=I want to order Stone Crash Powder" class="btn-buy">🛒 Buy Stone Crash</a>
+        <a href="https://wa.me/919999999999?text=Tell me more about Stone Crash" class="btn-buy-outline">💬 Ask on WhatsApp</a>
+      </div>
+    </div>
+
+    <!-- Product 2: Stone-Go -->
+    <div class="product-card">
+      <div class="product-badge-top" style="background:var(--green-mid)">CAPSULE</div>
+      <div class="product-img-wrap" style="background: linear-gradient(160deg,#2a2a2a,#1a1a1a);">
+        <img src="/mnt/user-data/uploads/1000034127.png" alt="RN Herbal Stone-Go Capsules">
+      </div>
+      <div class="product-body">
+        <div class="product-brand">RN Herbal</div>
+        <div class="product-name">Stone-Go Capsules</div>
+        <div class="product-tagline">Ayurvedic capsule treatment for kidney & gallbladder stones · 60 Capsules</div>
+        <ul class="product-benefits">
+          <li><span class="check">✓</span> Kidney Stone, Gallbladder Stone & Renal Colic</li>
+          <li><span class="check">✓</span> Urinary Bladder Stones & UTI relief</li>
+          <li><span class="check">✓</span> Relieves Strangury & painful urination</li>
+          <li><span class="check">✓</span> Convenient once-daily capsule format</li>
+          <li><span class="check">✓</span> No chemicals — 100% natural herbs</li>
+        </ul>
+        <div class="product-price-row">
+          <div>
+            <span class="product-price">₹999</span>
+            <span class="product-price-old">₹1,499</span>
+          </div>
+          <span class="product-savings">Save 33%</span>
+        </div>
+        <a href="https://wa.me/919999999999?text=I want to order Stone-Go Capsules" class="btn-buy">🛒 Buy Stone-Go</a>
+        <a href="https://wa.me/919999999999?text=Tell me more about Stone-Go Capsules" class="btn-buy-outline">💬 Ask on WhatsApp</a>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Combo offer -->
+  <div style="max-width:820px;margin:32px auto 0;background:linear-gradient(135deg,#1a5c2a,#2d8a42);border-radius:20px;padding:30px 28px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:20px;">
+    <div>
+      <div style="color:var(--gold-light);font-size:12px;font-weight:700;letter-spacing:2px;text-transform:uppercase;margin-bottom:6px;">⭐ Best Value</div>
+      <div style="font-family:'Playfair Display',serif;font-size:22px;color:#fff;margin-bottom:4px;">Complete Stone Care Combo</div>
+      <div style="color:rgba(255,255,255,.75);font-size:14px;">Stone Crash Powder + Stone-Go Capsules — maximum results with dual-action treatment</div>
+    </div>
+    <div style="text-align:right;flex-shrink:0;">
+      <div style="font-family:'Playfair Display',serif;font-size:30px;color:var(--gold-light);">₹1,699</div>
+      <div style="font-size:13px;text-decoration:line-through;color:rgba(255,255,255,.45);margin-bottom:10px;">₹2,798</div>
+      <a href="https://wa.me/919999999999?text=I want the Complete Stone Care Combo" style="background:var(--gold);color:var(--green-dark);padding:12px 28px;border-radius:30px;font-weight:700;font-size:15px;text-decoration:none;display:inline-block;">Get Combo Deal</a>
+    </div>
+  </div>
+</section>
+
+<!-- HOW IT WORKS -->
+<section class="how-section">
+  <div class="section-label">The Science</div>
+  <h2 class="section-title">How RN Herbal Works</h2>
+  <p class="section-desc">A three-step natural process — no incisions, no anaesthesia, no hospital bills.</p>
+
+  <div class="steps-row">
+    <div class="step">
+      <div class="step-num">1</div>
+      <div class="step-icon">🎯</div>
+      <h4>Targets the Stone</h4>
+      <p>Powerful herbs like Patharchatta & Gokhru penetrate the stone's structure, breaking the mineral bonds that hold it together.</p>
+    </div>
+    <div class="step">
+      <div class="step-num">2</div>
+      <div class="step-icon">🔬</div>
+      <h4>Dissolves & Fragments</h4>
+      <p>The stone crumbles into micro-particles over 7–15 days, small enough to pass safely through your urinary system.</p>
+    </div>
+    <div class="step">
+      <div class="step-num">3</div>
+      <div class="step-icon">💧</div>
+      <h4>Flushes Naturally</h4>
+      <p>Punarnava herb increases urine flow, carrying stone fragments out of your body — completely painlessly.</p>
+    </div>
+    <div class="step">
+      <div class="step-num">4</div>
+      <div class="step-icon">🛡️</div>
+      <h4>Prevents Recurrence</h4>
+      <p>Balances uric acid and mineral levels to reduce the likelihood of new stones forming in future.</p>
+    </div>
+  </div>
+</section>
+
+<!-- BENEFITS -->
+<section class="benefits-section">
+  <div class="section-label">Why Choose RN Herbal</div>
+  <h2 class="section-title" style="color:#fff;">6 Reasons Men & Women<br>Over 35 Trust Us</h2>
+  <p class="section-desc" style="color:rgba(255,255,255,.78);">We understand that after 35, you need a solution that is safe, proven, and respects your body.</p>
+
+  <div class="benefits-grid">
+    <div class="benefit-card">
+      <div class="benefit-icon">🌱</div>
+      <h4>100% Ayurvedic</h4>
+      <p>Patharchatta, Gokhru, Punarnava — time-tested herbs with centuries of proven results.</p>
+    </div>
+    <div class="benefit-card">
+      <div class="benefit-icon">🚫✂️</div>
+      <h4>No Surgery Needed</h4>
+      <p>Dissolves stones of up to 40mm completely naturally — no operation, no hospital stay.</p>
+    </div>
+    <div class="benefit-card">
+      <div class="benefit-icon">⚡</div>
+      <h4>Fast Results</h4>
+      <p>Most patients experience significant pain relief within 7 days, stone-free in 15 days.</p>
+    </div>
+    <div class="benefit-card">
+      <div class="benefit-icon">🔒</div>
+      <h4>Zero Side Effects</h4>
+      <p>Completely natural — no chemicals, no harmful compounds, safe for long-term use.</p>
+    </div>
+    <div class="benefit-card">
+      <div class="benefit-icon">🏭</div>
+      <h4>GMP & WHO Certified</h4>
+      <p>Manufactured in a certified facility inspected by WHO, GMP & ISO authorities.</p>
+    </div>
+    <div class="benefit-card">
+      <div class="benefit-icon">📦</div>
+      <h4>Doorstep Delivery</h4>
+      <p>Discreet packaging. Free home delivery across India. No embarrassment, no queues.</p>
+    </div>
+  </div>
+</section>
+
+<!-- INGREDIENTS -->
+<section class="ingredients-section">
+  <div class="section-label">Key Ingredients</div>
+  <h2 class="section-title">Nature's Most Powerful<br>Stone-Fighting Herbs</h2>
+  <p class="section-desc">Each herb is carefully selected for its proven ability to target kidney and gallbladder stones.</p>
+
+  <div class="ingredients-grid">
+    <div class="ingredient-card">
+      <div class="ingredient-icon">🌿</div>
+      <div class="ingredient-name">Patharchatta</div>
+      <div class="ingredient-hindi">पत्थरचट्टा</div>
+      <div class="ingredient-benefit">Dissolves calcium oxalate stones; the #1 Ayurvedic stone-breaker</div>
+    </div>
+    <div class="ingredient-card">
+      <div class="ingredient-icon">🌾</div>
+      <div class="ingredient-name">Gokhru</div>
+      <div class="ingredient-hindi">गोखरू</div>
+      <div class="ingredient-benefit">Breaks stones into fragments; powerful diuretic that flushes them out</div>
+    </div>
+    <div class="ingredient-card">
+      <div class="ingredient-icon">🍃</div>
+      <div class="ingredient-name">Punarnava</div>
+      <div class="ingredient-hindi">पुनर्नवा</div>
+      <div class="ingredient-benefit">Reduces kidney inflammation; strengthens urinary tract function</div>
+    </div>
+    <div class="ingredient-card">
+      <div class="ingredient-icon">🌺</div>
+      <div class="ingredient-name">Varuna Bark</div>
+      <div class="ingredient-hindi">वरुण</div>
+      <div class="ingredient-benefit">Prevents crystal formation; protects against future stone recurrence</div>
+    </div>
+    <div class="ingredient-card">
+      <div class="ingredient-icon">🪨</div>
+      <div class="ingredient-name">Shilajit</div>
+      <div class="ingredient-hindi">शिलाजीत</div>
+      <div class="ingredient-benefit">Restores kidney vitality; balances mineral levels in the body</div>
+    </div>
+    <div class="ingredient-card">
+      <div class="ingredient-icon">🌱</div>
+      <div class="ingredient-name">Kulthi Dal</div>
+      <div class="ingredient-hindi">कुलथी दाल</div>
+      <div class="ingredient-benefit">Traditional kidney cleanser; reduces uric acid naturally</div>
+    </div>
+  </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section class="testimonials-section">
+  <div class="section-label">Real Stories</div>
+  <h2 class="section-title">55,000+ Lives Changed.<br>Here Are a Few.</h2>
+  <p class="section-desc">Real customers, real results. People just like you — who chose Ayurveda over the operating table.</p>
+
+  <div class="reviews-grid">
+
+    <div class="review-card">
+      <div class="review-product-tag">Stone Crash Powder</div>
+      <div class="review-stars">★★★★★</div>
+      <p class="review-text">I had a 12mm kidney stone and my doctor had scheduled surgery. A friend suggested Stone Crash. Within 12 days the stone had completely dissolved. My follow-up ultrasound showed a clean kidney. I cancelled the surgery. This product is a miracle.</p>
+      <div class="review-author">
+        <div class="review-avatar">R</div>
+        <div>
+          <div class="review-name">Ramesh Verma, 52</div>
+          <div class="review-meta">Lucknow · Verified Purchase</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="review-card">
+      <div class="review-product-tag">Stone-Go Capsules</div>
+      <div class="review-stars">★★★★★</div>
+      <p class="review-text">मैंने सालों तक पथरी के दर्द से जूझा और मुझे सर्जरी की सलाह दी गई थी। लेकिन जब मैंने Stone-Go लिया, सिर्फ 10 दिनों में मुझे आराम मिला और मेरी पथरी गलकर बाहर निकल गई। भगवान का शुक्रिया और RN Herbal का।</p>
+      <div class="review-author">
+        <div class="review-avatar">S</div>
+        <div>
+          <div class="review-name">Sunita Devi, 47</div>
+          <div class="review-meta">Jaipur · Verified Purchase</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="review-card">
+      <div class="review-product-tag">Complete Combo</div>
+      <div class="review-stars">★★★★★</div>
+      <p class="review-text">I was sceptical at first — I'm 58 years old and have tried many so-called remedies. But the combo of Stone Crash and Stone-Go together cleared my gallbladder stones in under 3 weeks. No pain, no surgery costs. Just natural healing. Highly recommended.</p>
+      <div class="review-author">
+        <div class="review-avatar">M</div>
+        <div>
+          <div class="review-name">Mahendra Singh, 58</div>
+          <div class="review-meta">Delhi · Verified Purchase</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="review-card">
+      <div class="review-product-tag">Stone Crash Powder</div>
+      <div class="review-stars">★★★★★</div>
+      <p class="review-text">My husband had been suffering from recurring kidney stones for 5 years. We ordered Stone Crash on the advice of our family doctor. The stone passed naturally within 9 days. No pain during the process. We now keep a supply at home.</p>
+      <div class="review-author">
+        <div class="review-avatar">P</div>
+        <div>
+          <div class="review-name">Priya Sharma, 44</div>
+          <div class="review-meta">Pune · Verified Purchase</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="review-card">
+      <div class="review-product-tag">Stone-Go Capsules</div>
+      <div class="review-stars">★★★★☆</div>
+      <p class="review-text">Delivery was fast and the packaging was discreet. Started Stone-Go capsules 2 weeks ago for a 8mm stone. The pain has reduced dramatically. My next ultrasound is in 2 weeks — expecting a clean result based on how I feel now.</p>
+      <div class="review-author">
+        <div class="review-avatar">A</div>
+        <div>
+          <div class="review-name">Arun Kumar, 39</div>
+          <div class="review-meta">Hyderabad · Verified Purchase</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="review-card">
+      <div class="review-product-tag">Stone Crash Powder</div>
+      <div class="review-stars">★★★★★</div>
+      <p class="review-text">My mother is 63 and had gallbladder stones that were causing constant nausea. Surgery was risky at her age. Stone Crash Powder worked brilliantly — within 2 weeks her pain and nausea were gone. Ultrasound confirmed the stones had reduced significantly.</p>
+      <div class="review-author">
+        <div class="review-avatar">V</div>
+        <div>
+          <div class="review-name">Vikash Gupta, 36</div>
+          <div class="review-meta">Patna · Verified Purchase</div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="faq-section">
+  <div class="section-label">Got Questions?</div>
+  <h2 class="section-title">Frequently Asked Questions</h2>
+  <p class="section-desc">Answers to what our customers ask most before ordering.</p>
+
+  <div class="faq-list">
+    <div class="faq-item open">
+      <div class="faq-q">How long before I see results?</div>
+      <div class="faq-a">Most patients experience pain relief within 3–7 days of starting treatment. Stones typically begin to fragment and pass within 7–15 days. Larger stones (above 20mm) may take 3–4 weeks of consistent use. Results vary based on stone size, type and individual health.</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q">Which product should I choose — Powder or Capsules?</div>
+      <div class="faq-a">Both products contain similar herbal formulas. Stone Crash Powder is absorbed faster and is ideal for acute pain and larger stones. Stone-Go Capsules are more convenient for daily use and maintenance. For maximum effect, we recommend the Combo — using both together.</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q">Is it safe for people over 50 with other health conditions?</div>
+      <div class="faq-a">Yes. Both products are 100% natural with no synthetic chemicals, making them safe for older adults. However, if you are on prescription medication for diabetes, blood pressure or heart conditions, please consult your doctor before starting. We always recommend this for patients over 60.</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q">How do I take Stone Crash Powder?</div>
+      <div class="faq-a">Mix 1 teaspoon (approximately 5g) of Stone Crash Powder in a glass of warm water and drink it on an empty stomach in the morning. Repeat in the evening before dinner. Drink at least 3–4 litres of water throughout the day to help flush the fragments.</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q">Can I take both products together?</div>
+      <div class="faq-a">Absolutely — the Combo is our most recommended option. Stone Crash Powder works quickly in the digestive tract while Stone-Go Capsules provide sustained herbal action through the bloodstream. Together they offer a dual-action approach that gets faster, more complete results.</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q">What if the product doesn't work for me?</div>
+      <div class="faq-a">We offer a 30-day money-back guarantee. If you complete a full course and don't see improvement, contact us on WhatsApp and we will refund you — no questions asked. We're that confident in our formula.</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q">Do you deliver across India?</div>
+      <div class="faq-a">Yes! We deliver to all states and union territories across India. Standard delivery takes 3–5 working days. Express delivery (1–2 days) is available in major cities. All orders are packaged discreetly with no product details on the outer packaging.</div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta-section">
+  <h2>Ready to Live <em>Pain-Free</em>?<br>Your Stones Can Be Gone in 15 Days.</h2>
+  <p>Join 55,000+ Indians who chose Ayurveda over the operating table. Order today — free delivery, 30-day guarantee.</p>
+  <div class="cta-btns">
+    <a href="https://wa.me/919999999999?text=I want to order RN Herbal products" class="btn-cta-gold">🛒 Order on WhatsApp</a>
+    <a href="#products" class="btn-cta-white">View Products</a>
+  </div>
+</section>
+
+<!-- GUARANTEE -->
+<div class="guarantee-bar">
+  <div class="guarantee-icon">🛡️</div>
+  <div class="guarantee-text">
+    <h4>30-Day Money-Back Guarantee</h4>
+    <p>We are so confident in RN Herbal products that if you don't see results within 30 days of use, we will refund 100% of your money. No questions, no hassle.</p>
+  </div>
+</div>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-logo">🌿 RN Herbal</div>
+  <div class="footer-tagline">Ancient Wisdom. Modern Results. Natural Healing.</div>
+  <div class="footer-links">
+    <a href="#">Home</a>
+    <a href="#products">Products</a>
+    <a href="#">Contact Us</a>
+    <a href="#">Privacy Policy</a>
+    <a href="#">Refund Policy</a>
+    <a href="#">Terms of Use</a>
+  </div>
+  <p class="footer-disclaimer">⚕️ DISCLAIMER: These statements have not been evaluated by the Food and Drug Administration. RN Herbal products are Ayurvedic supplements and are not intended to diagnose, treat, cure or prevent any disease. Individual results may vary. Please consult a qualified healthcare professional before starting any new supplement, especially if you are pregnant, nursing, taking medication, or have a medical condition.</p>
+  <div class="footer-copy">© 2025 RN Herbal. All rights reserved. Manufactured under GMP & WHO certified facility, Haryana, India.</div>
+</footer>
+
+<!-- FLOATING WHATSAPP -->
+<a href="https://wa.me/919999999999?text=Hello! I'd like to know more about RN Herbal stone products." class="whatsapp-btn" title="Chat on WhatsApp">💬</a>
+
+<script>
+  // FAQ accordion
+  document.querySelectorAll('.faq-q').forEach(q => {
+    q.addEventListener('click', () => {
+      const item = q.parentElement;
+      const wasOpen = item.classList.contains('open');
+      document.querySelectorAll('.faq-item').forEach(i => i.classList.remove('open'));
+      if (!wasOpen) item.classList.add('open');
+    });
+  });
+
+  // Scroll reveal
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(e => {
+      if (e.isIntersecting) {
+        e.target.style.opacity = '1';
+        e.target.style.transform = 'translateY(0)';
+      }
+    });
+  }, { threshold: 0.1 });
+
+  document.querySelectorAll('.product-card, .review-card, .benefit-card, .problem-card, .ingredient-card, .step').forEach(el => {
+    el.style.opacity = '0';
+    el.style.transform = 'translateY(24px)';
+    el.style.transition = 'opacity .5s ease, transform .5s ease';
+    observer.observe(el);
+  });
+</script>
+
+</body>
+</html>
